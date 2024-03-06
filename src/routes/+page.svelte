@@ -1,2 +1,24 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<section>
+	<h1>Kroky Improved</h1>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo saepe optio non est, repudiandae
+	</p>
+</section>
+
+<style>
+	section {
+		height: 100vh;
+		height: 100svh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	h1 {
+		font-size: 4em;
+	}
+	p {
+		text-align: center;
+		width: 20em;
+	}
+</style>
