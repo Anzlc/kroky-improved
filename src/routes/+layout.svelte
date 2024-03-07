@@ -1,8 +1,9 @@
 <nav>
 	<ul>
-		<li>Order</li>
-		<li>Login</li>
-		<li>Register</li>
+		<li><a href="/">Home</a></li>
+		<li><a href="/order">Order</a></li>
+		<li><a href="/register">Register</a></li>
+		<li><a href="/login">Login</a></li>
 	</ul>
 </nav>
 
@@ -17,6 +18,28 @@
 		font-family: 'Roboto', sans-serif;
 		background-color: black;
 		color: white;
+	}
+	:global(a) {
+		color: white;
+		text-decoration: none;
+	}
+	:global(input) {
+		height: 3em;
+		width: 18em;
+		color: white;
+		background-color: rgb(84, 84, 84);
+		border: none;
+		outline-color: none;
+		border-radius: 5px;
+	}
+
+	:global(button) {
+		height: 3em;
+		background-color: rgb(130, 130, 130);
+		color: white;
+		border: none;
+		outline: none;
+		border-radius: 5px;
 	}
 	nav {
 		position: fixed;
