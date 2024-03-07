@@ -1,16 +1,18 @@
 <section>
 	<h2>Register</h2>
-	<form action="">
-		<label for="kroky-username">Kroky Username</label>
-		<input type="text" name="kroky-username" />
-		<label for="kroky-password">Kroky Password</label>
-		<input type="text" name="kroky-password" />
+	<form action="?/register" method="post">
+		<label for="krokyUsername">Kroky Username</label>
+		<input type="text" name="krokyUsername" />
+		<label for="krokyPassword">Kroky Password</label>
+		<input type="text" name="krokyPassword" />
 		<label for="username">Username</label>
 		<input type="text" name="username" />
+		<label for="email">Email</label>
+		<input type="text" name="email" />
 		<label for="password">Password</label>
 		<input type="password" name="password" />
-		<label for="password-confirm">Password Repeat</label>
-		<input type="password" name="password-confirm" />
+		<label for="passwordConfirm">Password Repeat</label>
+		<input type="password" name="passwordConfirm" />
 		<p>Already have an account, login <a id="here" href="/login">here</a>.</p>
 		<button>Register</button>
 	</form>
