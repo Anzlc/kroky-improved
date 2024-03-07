@@ -1,9 +1,22 @@
+<script>
+	export let data;
+</script>
+
 <nav>
 	<ul>
 		<li><a href="/">Home</a></li>
-		<li><a href="/order">Order</a></li>
-		<li><a href="/register">Register</a></li>
-		<li><a href="/login">Login</a></li>
+
+		{#if data.user}
+			<li><a href="/order">Order</a></li>
+			<li>
+				<form action="/logout" method="post">
+					<button id="logout">Logout</button>
+				</form>
+			</li>
+		{:else}
+			<li><a href="/register">Register</a></li>
+			<li><a href="/login">Login</a></li>
+		{/if}
 	</ul>
 </nav>
 
@@ -22,6 +35,13 @@
 	:global(a) {
 		color: white;
 		text-decoration: none;
+	}
+	#logout {
+		background-color: transparent;
+		font-size: 1em;
+		padding: 0;
+		margin: 0;
+		height: min-content;
 	}
 	:global(input) {
 		height: 3em;

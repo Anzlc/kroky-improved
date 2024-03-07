@@ -1,6 +1,6 @@
 <section>
 	<h2>Login</h2>
-	<form action="">
+	<form action="?/login" method="post">
 		<label for="username">Username</label>
 		<input type="text" name="username" />
 		<label for="password">Password</label>
